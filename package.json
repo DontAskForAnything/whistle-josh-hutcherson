@@ -1,0 +1,53 @@
+{
+	"name": "whistle-josh-hutcherson",
+	"description": "Amazing VSCode extension that displays your favorite meme! 🗣",
+	"version": "0.0.1",
+	"publisher": "DontAskForAnything",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DontAskForAnything/whistle-josh-hutcherson"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"views": {
+			"explorer": [
+				{
+					"type": "webview",
+					"id": "whistle.joshHutcherson",
+					"name": "😮"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"compile": "tsc -p ./",
+		"type-check": "tsc --noEmit",
+		"watch": "tsc -w -p ./",
+		"lint:check": "eslint src --ext ts",
+		"lint": "eslint src --ext ts --fix ",
+		"format:check": "prettier --check src",
+		"format": " prettier --write src"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.73.0",
+		"@typescript-eslint/eslint-plugin": "^6.7.0",
+		"@typescript-eslint/parser": "^6.7.0",
+		"eslint": "^8.32.0",
+		"eslint-plugin-unused-imports": "^3.0.0",
+		"prettier": "^3.1.0",
+		"typescript": "^5.2.2"
+	}
+}

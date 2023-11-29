@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+img.doomFaces {
+    margin: 0;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover;
+}
